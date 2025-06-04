@@ -1,0 +1,19 @@
+@import url('https://rsms.me/inter/inter.css');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Inter var', 'Inter', sans-serif; /* Ensure Inter is loaded via @import above */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Ensure html and body take full height for centering content */
+html, body, #root {
+  min-height: 100vh;
+}
+
+/* Add any other global styles here */
+/* Tailwind's backdrop-blur-sm utility should work directly if backdropFilter plugin is enabled (default in recent versions) or configured in tailwind.config.js */

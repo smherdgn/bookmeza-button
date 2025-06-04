@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bookmeza Button Showcase</title>
+  
+  <!-- JavaScript to apply dark mode preference before React loads -->
+  <script>
+    (function() {
+      try {
+        const theme = localStorage.getItem('theme');
+        if (theme === 'dark') {
+          document.documentElement.classList.add('dark');
+        } else if (theme === 'light') {
+          document.documentElement.classList.remove('dark');
+        }
+        // App.tsx will also manage theme based on prefers-color-scheme if no localStorage is set
+      } catch (e) {
+        // ignore
+      }
+    })();
+  </script>
+  <!-- The importmap has been REMOVED. Vite will handle all module imports. -->
+  <!-- The <script type="importmap"> block that was here has been deleted. -->
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <script type="module" src="/src/index.tsx"></script>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>

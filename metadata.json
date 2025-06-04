@@ -1,0 +1,5 @@
+{
+  "name": "Bookmeza Button Showcase",
+  "description": "A demonstration of the Bookmeza reusable Button component with various features like variants, sizes, loading states, i18n, and theming.",
+  "requestFramePermissions": []
+}

@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "allowJs": false,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "ESNext",
+    "moduleResolution": "bundler", // or "node" if preferred for some setups
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"] // Optional: for aliased imports like @/components/*
+    }
+  },
+  "include": ["src", "vite.config.ts", "tailwind.config.js", "postcss.config.js"],
+  "references": [{ "path": "./tsconfig.node.json" }] // If you have a tsconfig.node.json for Vite/ESLint configs
+}
